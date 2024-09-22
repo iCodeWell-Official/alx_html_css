@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-BlackIt.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-LightIt.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-ExtraLightIt.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-SemiboldIt.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 700; /* Bold */
+    text-align: center;
+}
+
+h2 {
+    font-weight: 200; /* Semibold */
+    font-size: 36px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700; /* Bold */
+    line-height: 3em;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400; /* Regular */
+}
+
+em {
+    font-style: italic; /* Italic */
+}
+
+strong {
+    font-weight: 700; /* Bold */
+}
+
+.light-text {
+    font-weight: 200; /* ExtraLight */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 169px 0px 175px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0px 26px 26px 0px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header {
+    background-image: url(images/Object.png);
+    background-size: cover;
+    color: #FFF;
+}
+
+.banner {
+    background-image: url(images/Object.png);
+    background-size: cover;
+    color: #FFF;
+    padding: 220px 97px;
+}
+
+.span_container {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.span_container span {
+    margin: 30px;
+}
+
+.register_button {
+    width: 162px;
+    height: 44px;
+    color: #FFF;
+    background-color: #C271FF;
+    border: none;
+    border-radius: 20px;
+}
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn {
+    display: flex;
+    flex-direction: column;
+}
+
+.learn h2 {
+    margin: 181px 87px;
+}
+
+.learn h2 span {
+    font-weight: bold;
+    color: #C271FF;
+}
+
+.tutos {
+    padding: 87px 87px;
+}
+
+.tutos h2 {
+    padding-bottom: 75px;
+}
+
+.tutos h2 span {
+    font-weight: bold;
+    color: #C271FF;
+}
+
+.the_pros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pro1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pro2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pro3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pro4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    background-color: #C271FF;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 110px 124px;
+}
+
+.quote div {
+    margin: 25px;
+}
+
+.blockquote {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.tutorials {
+    display: flex;
+    flex-direction: row;
+}
+
+.tuto1,
+.tuto2,
+.tuto3,
+.tuto4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rating_wrapper {
+    display: flex;
+    flex-direction: row;}
+
+.tuto1 p,
+.tuto2 p,
+.tuto3 p,
+.tuto4 p {
+    color: rgba(7, 22, 41, 0.5016) ;
+}
+
+.tuto1 h4,
+.tuto2 h4,
+.tuto3 h4,
+.tuto4 h4 {
+    text-align: center ;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+
+.membership {
+    background-color: #071629;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 52px;
+}
+
+.smileys {
+    display: flex;
+    flex-direction: row;
+    margin: 58px 85px;
+}
+
+.smileys div {
+    padding: 30px;
+    text-align: center;
+}
+
+.smileys div h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    padding: 67px 84px;
+}
+
+.FAQ h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.faq_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq_row p {
+    color: rgba(7, 22, 41, 0.50)
+}
+
+.faq_row div div {
+    margin: 110px;
+}
+
+footer {
+    background-color: #071629;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 169px 39px 175px;
+}
+
+footer section p {
+    text-align: center;
+    padding-bottom: 39px;
+}
