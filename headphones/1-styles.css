@@ -1,0 +1,96 @@
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a:hover, a active {
+    color: #FF6565;
+}
+
+button:hover, button:active {
+    opacity: 0.9;
+}
+
+/* Nav-bar */
+nav {
+    padding: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #071629;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav a {
+    margin: 0px 21px 21px 0px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav svg {
+    display: none;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/headphones/images/headphones_hero_1.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 312px 27px 115px 27px;
+}
+
+.CTA {
+    margin: 40px 65px;
+    padding: 12px 12px;
+    border-radius: 18px;
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+}
+
+/* What_we_do section */
+.whatwedo {
+    padding: 110px 27px 110px 27px;
+}
+
+.whatwedo p {
+    margin-bottom: 90px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 20px;
+}
+
+.features h3 {
+    margin: 23px 13px;
+}
+
+@media screen and (max-width: 480px) {
+    nav img, nav ul{
+        display: none;
+    }
+
+    nav svg {
+        display: block;
+        margin-right: auto;
+    }
+    
+  .features {
+        display: flex;
+        flex-direction: column;
+}
+}
