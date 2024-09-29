@@ -1,0 +1,173 @@
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a:hover, a active {
+    color: #FF6565;
+}
+
+button:hover, button:active {
+    opacity: 0.9;
+}
+
+/* Nav-bar */
+nav {
+    padding: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #071629;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav a {
+    margin: 0px 21px 21px 0px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav svg {
+    display: none;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/headphones/images/headphones_hero_1.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 312px 27px 115px 27px;
+}
+
+.CTA {
+    margin: 40px 65px;
+    padding: 12px 12px;
+    border-radius: 18px;
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+}
+
+/* What_we_do section */
+.whatwedo {
+    padding: 110px 27px 110px 27px;
+}
+
+.whatwedo p {
+    margin-bottom: 90px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 20px;
+}
+
+.features h3 {
+    margin: 23px 13px;
+}
+
+/* Results section */
+.results {
+    background-image: url(/headphones/images/headphones_hero_2.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 141px 27px 79px 27px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 46px;
+}
+
+.stats div {
+    position: relative;
+    display: inline-block;
+}
+
+.stats svg {
+    display: block;
+}
+
+.stats div div {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.stats p {
+    font-size: 13px;
+}
+
+.results p {
+    margin-bottom: 63px;
+}
+
+/* Contact us section */
+.contact_us {
+    padding: 110px 27px 130px 27px;
+}
+
+.contact_us form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact_us input, .contact_us textarea {
+    border: none;
+    border-bottom: 1px solid;
+    margin: 20px;
+    padding: 10px;
+    font-weight: 600;
+    outline: none;
+    resize: none;
+}
+
+/* Mobile styles */
+/* Navigation */
+@media screen and (max-width: 480px) {
+    nav img, nav ul{
+        display: none;
+    }
+
+    nav svg {
+        display: block;
+        margin-right: auto;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats svg {
+        margin-bottom: 50px;
+    }
+
+    .stats div div {
+        top: 35%;
+    }
+}
